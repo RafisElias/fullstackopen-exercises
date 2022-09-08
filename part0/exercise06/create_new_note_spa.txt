@@ -1,0 +1,27 @@
+note over browser:
+the user types a new note in the text field 
+end note
+
+note over browser:
+the user submit the new note to the onSubmit function
+end note
+
+note over browser:
+onSubmit function prevents browser from reloading using e.preventDefault();
+in the function is created a new object called note where we have the note text
+the note object is add in the notes array
+after the new note text field is clean
+end note
+
+note over browser:
+after the new note was add in the array the browser make a request to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+the server access the data in the req.body field of the request.
+end note
+
+note over server:
+the server create a new note object and add it to the array called notes
+end note

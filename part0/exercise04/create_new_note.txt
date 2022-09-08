@@ -1,0 +1,16 @@
+note over browser:
+the user types a new note in the text field 
+end note
+
+note over browser:
+the user submit the new note to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server:
+the server access the data in the req.body field of the request.
+end note
+
+note over server:
+the server create a new note object and add it to the array called notes
+end note
